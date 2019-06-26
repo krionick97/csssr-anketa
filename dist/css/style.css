@@ -1,1 +1,87 @@
-@font-face{font-family:Courier New;src:url(fonts/Courier-New-Regular.eot) format("opentype");src:url(fonts/Courier-New-Regular.eot?#iefix) format("embedded-opentype");src:url(fonts/Courier-New-Regular.woff) format("woff");src:url(fonts/Courier-New-Regular.ttf) format("truetype");font-weight:400;font-style:normal}html{font-family:PT Sans,sans-serif;font-weight:400;font-style:normal;font-size:10px}body{font-size:1.5rem}.text_2{font-family:PT Sans,sans-serif;font-weight:700;font-style:normal}.text_3{font-family:Courier New,serif;font-size:2rem}
+
+@font-face {
+  font-family: 'Courier New';
+  src: url("/fonts/Courier-New-Regular.eot") format("opentype");
+  src: url("/fonts/Courier-New-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("/fonts/Courier-New-Regular.woff") format("woff");
+  src: url("/fonts/Courier-New-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+html {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px; }
+
+body {
+  font-size: 1.5rem;
+  background-color: #797979;
+  color: #3d3d3d; }
+
+.anketa {
+  max-width: 78rem;
+  height: 100rem;
+  margin: 0 auto;
+  padding: 6rem 11rem;
+  background-image: url("/img/anketa-bg-image.jpg");
+  box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .anketa__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.1rem; }
+  .anketa__img {
+    height: 100%;
+    width: auto; }
+    .anketa__img-case {
+      margin: 9.4rem 0 0 5rem; }
+    .anketa__img-secret {
+      transform: translate(6rem, -1rem); }
+  .anketa__form {
+    /* Form Anketa */
+    margin-bottom: 7rem; }
+    .anketa__form-input {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 1.8rem;
+      /* Input and label div */
+      /*------------------------------------------------------------- */ }
+  .anketa__input {
+    font-family: 'Courier New', serif;
+    display: block;
+    font-size: 3rem;
+    width: 100%;
+    padding-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    background-color: transparent;
+    border: none;
+    background-image: url("/img/input-underline.png");
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: 100%;
+    /* Input field */
+    /* ---------------------------------------------------------- */ }
+    .anketa__input:focus {
+      outline: none; }
+    .anketa__input-label {
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.2rem;
+      letter-spacing: 0.07rem;
+      color: #2f1b15;
+      margin-right: 2rem;
+      /* Label */
+      /* ------------------------------------------------------------------ */ }
+  .anketa__subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.4rem;
+    margin: 0 0 1.6rem;
+    color: #2f1b15; }
+  .anketa__text {
+    line-height: 2rem; }
+

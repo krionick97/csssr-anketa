@@ -10,12 +10,41 @@
 <title>Дело</title>
   <link href="./css/style.css" rel="stylesheet"></head>
   <body>
-    <div>
-      <p class="text_1">Test</p>
-      <p class="text_2">Test и этот шрифт не лучше ни хрена</p>
-      <p class="text_3">Test Как же я задолбался, настраивать этот долбанный шрифт</p>
-      <p></p>
-    </div>
+    <section class="anketa">
+      <div class="anketa__images"><img class="anketa__img anketa__img-logo" src="img/csssr-logo.png" alt="logo"><img class="anketa__img anketa__img-case" src="img/case.png" alt="case"><img class="anketa__img anketa__img-secret" src="img/secret.png" alt="secret"></div>
+      <div class="anketa__data">
+        <!-- Form-->
+        <form class="anketa__form" action="#" id="form" name="form">
+          <div class="anketa__form-input anketa__form-name">
+            <label class="anketa__input-label" for="name">Полное&nbsp;ФИО</label>
+            <input class="anketa__input anketa__input-name" type="text" name="name" placeholder="Иванов Иван Иванович" id="name">
+          </div>
+          <div class="anketa__form-input anketa__form-birth">
+            <label class="anketa__input-label" for="birth">Год&nbsp;рождения</label>
+            <input class="anketa__input anketa__input-birth" type="text" name="birth" placeholder="1990" id="birth">
+          </div>
+          <div class="anketa__form-input anketa__form-location">
+            <label class="anketa__input-label" for="location">Место&nbsp;жительства</label>
+            <input class="anketa__input anketa__input-location" type="text" name="location" placeholder="г. Иваново, Россия" id="location">
+          </div>
+          <div class="anketa__form-input anketa__form-skype">
+            <label class="anketa__input-label" for="skype">Скайп</label>
+            <input class="anketa__input anketa__input-skype" type="text" name="skype" placeholder="ivanov" id="skype">
+          </div>
+          <div class="anketa__form-input anketa__form-email">
+            <label class="anketa__input-label" for="email">Почта</label>
+            <input class="anketa__input anketa__input-email" type="email" name="email" placeholder="ivanov@gmail.com" id="email">
+          </div>
+        </form>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Checkboxes-->
+        <div class="anketa__checkboxes">
+          <h2 class="anketa__subtitle">Расскажите о себе чекбоксами</h2>
+          <p class="anketa__text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------------------------------------------->
+      </div>
+    </section>
 <!-- Scripts-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="bundle.js"></script></body>

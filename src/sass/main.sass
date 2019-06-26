@@ -1,5 +1,6 @@
 @import 'fonts'
 @import 'mixins'
+@import 'colors'
 
 html
   +ptSans_reg
@@ -7,11 +8,8 @@ html
 
 body
   font-size: 1.5rem
+  background-color: $color-bg-grey
+  color: $color-thin-text
 
-.text_2
-  +ptSans_bold
-  font-size: 2rem
 
-.text_3
-  +cor_reg
-  font-size: 2rem
+@import 'anketa'

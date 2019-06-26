@@ -59,7 +59,21 @@ module.exports = {
       },
       {
         test: /\.sass$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+           loader: 'css-loader', 
+          },
+          {
+           loader: 'sass-loader',
+          },
+          // {
+          //   loader: "extract-loader",
+          //   options: {
+          //       publicPath: "../"
+          //   }
+          // },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -71,6 +85,30 @@ module.exports = {
             }
         }]
       },
+      // {
+      //   test: /\.svg$/,
+      //   use: 'file-loader',
+      // },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]',
+      //         outputPath: 'img'
+      //       },
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   use: [
+      //     'url-loader?limit=10000',
+      //     'img-loader'
+      //   ]
+      // },
+
       {
         test: /\.js$/,
         exclude: /node_modules/, 

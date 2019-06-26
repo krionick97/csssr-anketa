@@ -1,0 +1,65 @@
+.anketa
+  max-width: 78rem
+  height: 100rem
+  margin: 0 auto
+  padding: 6rem 11rem
+  background-image: url('/img/anketa-bg-image.jpg')
+  box-shadow: 0.1rem 0.1rem 2rem rgba($color-black, 0.4)
+  background-repeat: no-repeat
+  background-size: cover
+  &__images
+    display: flex
+    justify-content: space-between
+    margin-bottom: 5.1rem
+  &__img
+    height: 100%
+    width: auto
+    &-case
+      margin: 9.4rem 0 0 5rem
+    &-secret
+      transform: translate(6rem, -1rem)
+
+  &__form
+    /* Form Anketa */
+    margin-bottom: 7rem
+    &-input
+      display: flex
+      align-items: flex-end
+      margin-bottom: 1.8rem
+      /* Input and label div */
+      /*------------------------------------------------------------- */
+  
+  &__input
+    +cor_reg
+    display: block
+    font-size: 3rem
+    width: 100%
+    padding-bottom: 0.8rem
+    padding-left: 0.5rem
+    background-color: transparent
+    border: none
+    background-image: url('/img/input-underline.png')
+    background-repeat: no-repeat
+    background-position-y: 100%
+    background-size: 100%
+    &:focus
+      outline: none
+    /* Input field */
+    /* ---------------------------------------------------------- */
+
+    &-label
+      +ptSans_bold
+      font-size: 2.2rem
+      letter-spacing: 0.07rem
+      color: $color-dark-text
+      margin-right: 2rem
+      /* Label */
+      /* ------------------------------------------------------------------ */
+
+  &__subtitle
+    +ptSans_bold
+    font-size: 2.4rem
+    margin: 0 0 1.6rem
+    color: $color-dark-text
+  &__text
+    line-height: 2rem

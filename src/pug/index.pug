@@ -3,10 +3,39 @@ html(lang="ru")
   head
     include includes/head-settings
   body
-    div
-      p.text_1 Test
-      p.text_2 Test и этот шрифт не лучше ни хрена
-      p.text_3 Test Как же я задолбался, настраивать этот долбанный шрифт
-      p. 
-    
+    section.anketa
+      div.anketa__images
+        img(src="img/csssr-logo.png", alt="logo").anketa__img.anketa__img-logo
+        img(src="img/case.png", alt="case").anketa__img.anketa__img-case
+        img(src="img/secret.png", alt="secret").anketa__img.anketa__img-secret
+      div.anketa__data
+        // Form
+        form(action="#", id="form", name="form").anketa__form
+          div.anketa__form-input.anketa__form-name
+            label(for="name").anketa__input-label Полное&nbsp;ФИО
+            input(type="text", name="name", placeholder='Иванов Иван Иванович')#name.anketa__input.anketa__input-name
+          div.anketa__form-input.anketa__form-birth
+            label(for="birth").anketa__input-label Год&nbsp;рождения
+            input(type="text", name="birth", placeholder='1990')#birth.anketa__input.anketa__input-birth
+          div.anketa__form-input.anketa__form-location
+            label(for="location").anketa__input-label Место&nbsp;жительства
+            input(type="text", name="location", placeholder='г. Иваново, Россия')#location.anketa__input.anketa__input-location
+          div.anketa__form-input.anketa__form-skype
+            label(for="skype").anketa__input-label Скайп
+            input(type="text", name="skype", placeholder='ivanov')#skype.anketa__input.anketa__input-skype
+          div.anketa__form-input.anketa__form-email
+            label(for="email").anketa__input-label Почта
+            input(type="email", name="email", placeholder='ivanov@gmail.com')#email.anketa__input.anketa__input-email
+        // -----------------------------------------------------------------------------------------------------------------------------
+
+        // Checkboxes
+        div.anketa__checkboxes
+          h2.anketa__subtitle Расскажите о себе чекбоксами
+          p.anketa__text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+
+          
+        // ---------------------------------------------------------------------------------------------------------------------------------
+
+
     include includes/scripts
