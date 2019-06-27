@@ -11,27 +11,57 @@ html(lang="ru")
       div.anketa__data
         // Form
         form(action="#", id="form", name="form").anketa__form
-          div.anketa__form-input.anketa__form-name
-            label(for="name").anketa__input-label Полное&nbsp;ФИО
-            input(type="text", name="name", placeholder='Иванов Иван Иванович')#name.anketa__input.anketa__input-name
-          div.anketa__form-input.anketa__form-birth
-            label(for="birth").anketa__input-label Год&nbsp;рождения
-            input(type="text", name="birth", placeholder='1990')#birth.anketa__input.anketa__input-birth
-          div.anketa__form-input.anketa__form-location
-            label(for="location").anketa__input-label Место&nbsp;жительства
-            input(type="text", name="location", placeholder='г. Иваново, Россия')#location.anketa__input.anketa__input-location
-          div.anketa__form-input.anketa__form-skype
-            label(for="skype").anketa__input-label Скайп
-            input(type="text", name="skype", placeholder='ivanov')#skype.anketa__input.anketa__input-skype
-          div.anketa__form-input.anketa__form-email
-            label(for="email").anketa__input-label Почта
-            input(type="email", name="email", placeholder='ivanov@gmail.com')#email.anketa__input.anketa__input-email
-        // -----------------------------------------------------------------------------------------------------------------------------
+          div.anketa__data
+            div.anketa__form-input.anketa__form-name
+              label(for="name").anketa__input-label Полное&nbsp;ФИО
+              input(type="text" name="name" placeholder='Иванов Иван Иванович')#name.anketa__input.anketa__input-name
+            div.anketa__form-input.anketa__form-birth
+              label(for="birth").anketa__input-label Год&nbsp;рождения
+              input(type="text" name="birth" placeholder='1990')#birth.anketa__input.anketa__input-birth
+            div.anketa__form-input.anketa__form-location
+              label(for="location").anketa__input-label Место&nbsp;жительства
+              input(type="text" name="location" placeholder='г. Иваново, Россия')#location.anketa__input.anketa__input-location
+            div.anketa__form-input.anketa__form-skype
+              label(for="skype").anketa__input-label Скайп
+              input(type="text" name="skype" placeholder='ivanov')#skype.anketa__input.anketa__input-skype
+            div.anketa__form-input.anketa__form-email
+              label(for="email").anketa__input-label Почта
+              input(type="email" name="email" placeholder='ivanov@gmail.com')#email.anketa__input.anketa__input-email
 
-        // Checkboxes
-        div.anketa__checkboxes
-          h2.anketa__subtitle Расскажите о себе чекбоксами
-          p.anketa__text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+          // Checkboxes
+          div.anketa__checkboxes
+            h2.anketa__subtitle Расскажите о себе чекбоксами
+            p.anketa__text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+            div.anketa__checkboxes-block
+              // Cycle of items 19 times
+              block content
+                - var checkboxText1 = "БЭМ/OOCSS"
+                - var checkboxText2 = "PUG (Jade)"
+                - var checkboxText3 = "Stylus/LESS/SASS"
+                - var checkboxText4 = "Работаю с SVG"
+                - var checkboxText5 = "Верстаю семантично"
+                - var checkboxText6 = "Accessibility (A11Y)"
+                - var checkboxText7 = "ES2015/ES2016"
+                - var checkboxText8 = "Gulp/GRUNT"
+                - var checkboxText9 = "Webpack"
+                - var checkboxText10 = "Дружу с WebGL"
+                - var checkboxText11 = "jQuery"
+                - var checkboxText12 = "Знаю/изучаю Angular"
+                - var checkboxText13 = "Знаю/изучаю React"
+                - var checkboxText14 = "Знаю/изучаю Node.js"
+                - var checkboxText15 = "Использую Git"
+                - var checkboxText16 = "С глазомером всё ок"
+                - var checkboxText17 = "Читаю blog.csssr.ru"
+                - var checkboxText18 = "Я ленивый(-ая)"
+                - var checkboxText19 = "У меня хороший английский"
+
+              - for (var i=1; i<20; i++)
+                  // Checkbox item
+                  div.anketa__checkboxes-item
+                    span(id="box"+i).anketa__checkboxes-box
+                      input(type="checkbox" name="option"+i value="option"+i id="option"+i).anketa__checkboxes-option
+                    label(for="option"+i).anketa__checkboxes-label #{i}
+                  // --------------------------------------------------------------------------------------------
 
 
           
