@@ -12,7 +12,7 @@ $(document).ready(function () {
   // .appendTo($('header'))
   //--------------------------------------------------
 
-  // Click checkobox
+  // Click checkobox about yourself
   let checkboxIndex = new Array();
   let markIndex = new Array();
   let optionIndex = new Array();
@@ -30,10 +30,8 @@ $(document).ready(function () {
         document.getElementById(markIndex[j]).style.opacity = 0;
         document.getElementById(optionIndex[j]).checked = false;
       }
-
     } // end click function
-
-        
   } // end for
+  // -------------------------------------------------------------------------------------
   
 });

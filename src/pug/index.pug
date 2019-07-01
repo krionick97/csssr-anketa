@@ -36,15 +36,37 @@ html(lang="ru")
               // Cycle of items 19 times
               include includes/variables
 
-              - for (var i=1; i<20; i++)
+              - for (var j=1; j<20; j++)
                   // Checkbox item
                   div.anketa__checkboxes-item
-                    div(id="box"+i).anketa__checkboxes-box
-                      span(id="box-mark-"+i).anketa__checkboxes-mark
-                      input(type="checkbox" name="option"+i value="option"+i id="option"+i).anketa__checkboxes-option
-                    label(for="option"+i).anketa__checkboxes-label= checkboxText[i]
+                    div(id="box"+j).anketa__checkboxes-box
+                      span(id="box-mark-"+j).anketa__checkboxes-mark
+                      input(type="checkbox" name="option"+j value="option"+j id="option"+j).anketa__checkboxes-option
+                    label(for="option"+j).anketa__checkboxes-label= checkboxText[j]
                   // --------------------------------------------------------------------------------------------
 
+          // Javascript level
+          div.anketa__javascriptLevel
+            h2.anketa__subtitle.anketa__javascriptLevel-subtitle Уровень владения JavaScript
+            div.anketa__javascriptLevel-scale
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr1
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr2
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr3
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr4
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-end1
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-middle1
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-middle2
+              div.anketa__javascriptLevel-point.anketa__javascriptLevel-end2
+            div.anketa__javascriptLevel-block
+              // Cycle of level items
+              include includes/variables
+              - for (var i=1; i<5; i++)
+                // Level item
+                div.anketa__javascriptLevel-item
+                  input(type="radio" name="level"+i value="level"+i id="level"+i).anketa__javascriptLevel-option
+                  label(for="level"+i).anketa__javascriptLevel-label 
+                    div= levelText[i]
+                // -----------------------------------------------------------------------------------------
 
           
         // ---------------------------------------------------------------------------------------------------------------------------------
