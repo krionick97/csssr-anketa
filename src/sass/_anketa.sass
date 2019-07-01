@@ -72,9 +72,19 @@
   &__checkboxes
 
     /* Checkboxex Big Div */
+    &-block
+      display: flex
+      height: 24rem
+      flex-flow: column wrap
+      align-items: center
+      /* Checkboxes div block */
     &-item
       margin: 0 0 1rem
+      width: 25rem
       /* Checkboxes Item */
+      &:last-child
+        div
+          margin-bottom: 0.6rem
     &-box
       display: block
       width: 2rem
@@ -99,10 +109,11 @@
 @for $i from 1 through 19
   #box#{$i}
     position: relative
-    &:after
+    span
       position: absolute
       content: ''
       display: block
+      opacity: 0
       width: 2.1rem
       height: 2.6rem
       background-image: url('/img/checkbox-mark.png')

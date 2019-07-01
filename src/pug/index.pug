@@ -34,33 +34,15 @@ html(lang="ru")
             p.anketa__text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
             div.anketa__checkboxes-block
               // Cycle of items 19 times
-              block content
-                - var checkboxText1 = "БЭМ/OOCSS"
-                - var checkboxText2 = "PUG (Jade)"
-                - var checkboxText3 = "Stylus/LESS/SASS"
-                - var checkboxText4 = "Работаю с SVG"
-                - var checkboxText5 = "Верстаю семантично"
-                - var checkboxText6 = "Accessibility (A11Y)"
-                - var checkboxText7 = "ES2015/ES2016"
-                - var checkboxText8 = "Gulp/GRUNT"
-                - var checkboxText9 = "Webpack"
-                - var checkboxText10 = "Дружу с WebGL"
-                - var checkboxText11 = "jQuery"
-                - var checkboxText12 = "Знаю/изучаю Angular"
-                - var checkboxText13 = "Знаю/изучаю React"
-                - var checkboxText14 = "Знаю/изучаю Node.js"
-                - var checkboxText15 = "Использую Git"
-                - var checkboxText16 = "С глазомером всё ок"
-                - var checkboxText17 = "Читаю blog.csssr.ru"
-                - var checkboxText18 = "Я ленивый(-ая)"
-                - var checkboxText19 = "У меня хороший английский"
+              include includes/variables
 
               - for (var i=1; i<20; i++)
                   // Checkbox item
                   div.anketa__checkboxes-item
-                    span(id="box"+i).anketa__checkboxes-box
+                    div(id="box"+i).anketa__checkboxes-box
+                      span(id="box-mark-"+i).anketa__checkboxes-mark
                       input(type="checkbox" name="option"+i value="option"+i id="option"+i).anketa__checkboxes-option
-                    label(for="option"+i).anketa__checkboxes-label #{i}
+                    label(for="option"+i).anketa__checkboxes-label= checkboxText[i]
                   // --------------------------------------------------------------------------------------------
 
 
