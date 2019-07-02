@@ -49,24 +49,40 @@ html(lang="ru")
           div.anketa__javascriptLevel
             h2.anketa__subtitle.anketa__javascriptLevel-subtitle Уровень владения JavaScript
             div.anketa__javascriptLevel-scale
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr1
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr2
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr3
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-arr.anketa__javascriptLevel-arr4
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-end1
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-middle1
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-middle2
-              div.anketa__javascriptLevel-point.anketa__javascriptLevel-end2
+              div.anketa__javascriptLevel-point
+                div(id="arr-option-1").anketa__javascriptLevel-arr
+              div.anketa__javascriptLevel-point
+                div(id="arr-option-2").anketa__javascriptLevel-arr
+              div.anketa__javascriptLevel-point
+                div(id="arr-option-3").anketa__javascriptLevel-arr
+              div.anketa__javascriptLevel-point
+                div(id="arr-option-4").anketa__javascriptLevel-arr
             div.anketa__javascriptLevel-block
               // Cycle of level items
-              include includes/variables
-              - for (var i=1; i<5; i++)
-                // Level item
-                div.anketa__javascriptLevel-item
-                  input(type="radio" name="level"+i value="level"+i id="level"+i).anketa__javascriptLevel-option
-                  label(for="level"+i).anketa__javascriptLevel-label 
-                    div= levelText[i]
-                // -----------------------------------------------------------------------------------------
+              // Level item
+              div(id="item-level-1").anketa__javascriptLevel-item
+                input(type="radio" name="level" value="level1" id="level1" checked).anketa__javascriptLevel-option
+                div(for="level1").anketa__javascriptLevel-label 
+                  p Не владею
+              // -----------------------------------------------------------------------------------------
+              // Level item
+              div(id="item-level-2").anketa__javascriptLevel-item
+                input(type="radio" name="level" value="level2" id="level2").anketa__javascriptLevel-option
+                div(for="level2").anketa__javascriptLevel-label 
+                  p Использую готовые решения
+              // -----------------------------------------------------------------------------------------
+              // Level item
+              div(id="item-level-3").anketa__javascriptLevel-item
+                input(type="radio" name="level" value="level3" id="level3").anketa__javascriptLevel-option
+                div(for="level3").anketa__javascriptLevel-label 
+                  p Использую готовые решения и умею их переделывать
+              // -----------------------------------------------------------------------------------------
+              // Level item
+              div(id="item-level-4").anketa__javascriptLevel-item
+                input(type="radio" name="level" value="level4" id="level4").anketa__javascriptLevel-option
+                div(for="level4").anketa__javascriptLevel-label 
+                  p Пишу сложный JS с нуля
+              // -----------------------------------------------------------------------------------------
 
           
         // ---------------------------------------------------------------------------------------------------------------------------------

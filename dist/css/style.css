@@ -88,6 +88,7 @@ body {
     line-height: 2rem;
     margin-bottom: 3.3rem; }
   .anketa__checkboxes {
+    margin-bottom: 5.2rem;
     /* Checkboxex Big Div */ }
     .anketa__checkboxes-block {
       display: flex;
@@ -122,6 +123,67 @@ body {
       font-size: 2.1rem;
       color: #2f1b15;
       /* Checkbox Label */ }
+  .anketa__javascriptLevel-subtitle {
+    margin-bottom: 4rem; }
+  .anketa__javascriptLevel-scale {
+    height: 0.8rem;
+    background-image: url("/img/javascript-scale.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2.5rem;
+    position: relative; }
+  .anketa__javascriptLevel-item:hover {
+    cursor: pointer; }
+  .anketa__javascriptLevel-point {
+    margin-top: 0.3rem;
+    width: 0.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; }
+    .anketa__javascriptLevel-point:not(:first-child), .anketa__javascriptLevel-point:not(:last-child) {
+      background-image: url("/img/point-middle.png");
+      height: 1.4rem; }
+    .anketa__javascriptLevel-point:first-child, .anketa__javascriptLevel-point:last-child {
+      background-image: url("/img/point-end.png");
+      height: 2.3rem; }
+    .anketa__javascriptLevel-point:first-child {
+      left: 0.1rem;
+      /* 1st point on scale */ }
+    .anketa__javascriptLevel-point:nth-child(2) {
+      left: 14.5rem;
+      /* 2nd point on scale */ }
+    .anketa__javascriptLevel-point:nth-child(3) {
+      left: 39.2rem;
+      /* 3d point on scale */ }
+    .anketa__javascriptLevel-point:last-child {
+      right: 0.01rem;
+      /* 4th point on scale */ }
+  .anketa__javascriptLevel-option {
+    /* Level-option radio-button */ }
+  .anketa__javascriptLevel-arr {
+    position: absolute;
+    display: block;
+    width: 1.7rem;
+    height: 1.4rem;
+    background-image: url("/img/point-arr.png");
+    transform: translate(-0.8rem, -1.8rem); }
+  .anketa__javascriptLevel-block {
+    display: flex;
+    justify-content: space-between; }
+  .anketa__javascriptLevel-option {
+    /* JS-level radio-button */ }
+  .anketa__javascriptLevel-label {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #2f1b15;
+    /* Level label */ }
+    .anketa__javascriptLevel-label p {
+      margin: 0;
+      max-width: 17rem; }
+      .anketa__javascriptLevel-label p:hover {
+        cursor: pointer; }
 
 #box1 {
   position: relative; }
@@ -135,7 +197,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box2 {
   position: relative; }
@@ -149,7 +212,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box3 {
   position: relative; }
@@ -163,7 +227,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box4 {
   position: relative; }
@@ -177,7 +242,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box5 {
   position: relative; }
@@ -191,7 +257,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box6 {
   position: relative; }
@@ -205,7 +272,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box7 {
   position: relative; }
@@ -219,7 +287,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box8 {
   position: relative; }
@@ -233,7 +302,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box9 {
   position: relative; }
@@ -247,7 +317,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box10 {
   position: relative; }
@@ -261,7 +332,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box11 {
   position: relative; }
@@ -275,7 +347,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box12 {
   position: relative; }
@@ -289,7 +362,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box13 {
   position: relative; }
@@ -303,7 +377,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box14 {
   position: relative; }
@@ -317,7 +392,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box15 {
   position: relative; }
@@ -331,7 +407,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box16 {
   position: relative; }
@@ -345,7 +422,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box17 {
   position: relative; }
@@ -359,7 +437,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box18 {
   position: relative; }
@@ -373,7 +452,8 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
 #box19 {
   position: relative; }
@@ -387,5 +467,6 @@ body {
     background-image: url("/img/checkbox-mark.png");
     background-repeat: no-repeat;
     left: 0.2rem;
-    bottom: 0.3rem; }
+    bottom: 0.3rem;
+    /* ----------------------------------------------------------------------------- */ }
 
